@@ -66,38 +66,38 @@ public final class Main {
             switch (option) {
                 case SQUARE_OPTION: // 1
                     System.out.println("SQUARE AREA");
-                    System.out.print("Side length: ");
+                    System.out.print("Side length (m): ");
                     float side = SCANNER.nextFloat();
                     System.out.println("Square area = "
-                            + squareArea(side));
+                            + squareArea(side) + " m²");
                     System.out.println("=".repeat(LINE_LENGTH));
                     break;
                 case RECTANGLE_OPTION: // 2
                     System.out.println("RECTANGLE AREA");
-                    System.out.print("Width: ");
+                    System.out.print("Width (m): ");
                     float width = SCANNER.nextFloat();
-                    System.out.print("Length: ");
+                    System.out.print("Length (m): ");
                     float length = SCANNER.nextFloat();
                     System.out.println("Rectangle area = "
-                            + rectangleArea(width, length));
+                            + rectangleArea(width, length) + " m²");
                     System.out.println("=".repeat(LINE_LENGTH));
                     break;
                 case CIRCLE_OPTION: // 3
                     System.out.println("CIRCLE AREA");
-                    System.out.print("Radius: ");
+                    System.out.print("Radius (m): ");
                     double radius = SCANNER.nextDouble();
-                    System.out.printf("Circle area = %.2f%n",
+                    System.out.printf("Circle area = %.2f m²%n",
                             circleArea(radius));
                     System.out.println("=".repeat(LINE_LENGTH));
                     break;
                 case TRIANGLE_OPTION: // 4
                     System.out.println("TRIANGLE AREA");
-                    System.out.print("Base: ");
+                    System.out.print("Base (m): ");
                     float base = SCANNER.nextFloat();
-                    System.out.print("Height: ");
+                    System.out.print("Height (m): ");
                     float height = SCANNER.nextFloat();
                     System.out.println("Triangle area = "
-                            + triangleArea(base, height));
+                            + triangleArea(base, height) + " m²");
                     System.out.println("=".repeat(LINE_LENGTH));
                     break;
                 case CANCEL_OPTION: // 0
